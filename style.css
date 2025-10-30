@@ -1,0 +1,63 @@
+/* reset simples */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container geral */
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de Navegação */
+.header{
+    background-color: #66d0e0;
+    color: #6ced93;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Área principal */
+.main-content{
+    display: flex;
+    flex: 1;
+} 
+
+/* Menu lateral */
+.sidebar{
+    background-color: #d37eed;
+    color: #ef82d2;
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+/* Conteudo principal */
+.content{
+    background-color: #b17de9;
+    flex: 3;
+    padding: 20px;
+}
+
+/* Rodapé */
+.footer{
+    background-color: #ea7171;
+    color: #8df4bd;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsividade simples */
+@media (max-width: 768px) {
+    .main-content{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        min-width: auto;
+    }
+}
